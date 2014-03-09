@@ -37,6 +37,12 @@ namespace CI.Demo.Tests
                 var subject = new Demo.Feature("My UPPERcase Feature");
                 subject.Name.Should().Equal("my uppercase feature");
             }
+
+            [Fact]
+            public void ABrokenTestWillNotCommit()
+            {
+                "Broken".Should().Not.Equal("Committed");
+            }
         }
     }
 }
