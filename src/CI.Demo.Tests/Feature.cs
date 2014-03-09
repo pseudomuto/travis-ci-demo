@@ -41,7 +41,7 @@ namespace CI.Demo.Tests
             [Fact]
             public void ABrokenTestWillNotCommit()
             {
-                "Broken".Should().Not.Equal("Committed");
+                "Broken".Should().Equal("Committed");
             }
         }
     }
